@@ -1,0 +1,9 @@
+@mixin font($fontFolder, $fontName, $fontWeight) {
+	@font-face	{
+	    font-family: "#{$fontFolder}";
+		font-style: normal;
+	    font-weight: #{$fontWeight};
+		src: url('../fonts/#{$fontFolder}/#{$fontName}.woff2') format('woff2'),
+   			 url('../fonts/#{$fontFolder}/#{$fontName}.woff') format('woff');
+	}
+}

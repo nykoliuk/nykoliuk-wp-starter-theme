@@ -1,0 +1,37 @@
+.btn {
+    border: 0;
+    @include border-radius;
+    color: $brand1;
+    display: inline-block;
+    height: $btn-height;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 24px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    @include transition($btn-transition);
+
+    @include hover-focus {
+        text-decoration: none;
+    }
+
+    &:focus,
+    &.focus {
+        outline: 0;
+    }
+
+    &.disabled,
+    &:disabled {
+        opacity: .65;
+    }
+
+    &:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+
+    &:not(button) {
+        line-height: $btn-height;
+    }
+}

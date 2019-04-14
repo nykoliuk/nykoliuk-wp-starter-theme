@@ -1,0 +1,49 @@
+.form-control {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid $border-color;
+    @include border-radius;
+    color: $brand1;
+    display: block;
+    height: 40px;
+    font-size: 14px;
+    line-height: $line-height;
+    padding: 7px 16px;
+    width: 100%;
+    @include transition($input-transition);
+
+    &.medium {
+        font-size: 16px;
+        height: 48px;
+        padding: 7px 24px;
+    }
+    
+    &.white {
+        border-color: #fff;
+    }
+
+    // Unstyle the caret on `<select>`s in IE10+.
+    &::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+
+    &:focus {
+        border-color: $primary-color;
+        outline: 0;
+    }
+
+    &::placeholder {
+        color: $gray2;
+        opacity: 1;
+    }
+
+    &:disabled,
+    &[readonly] {
+        background-color: #fff;
+        opacity: 1;
+    }
+    &.error {
+        border-color: $error !important;
+    }
+}

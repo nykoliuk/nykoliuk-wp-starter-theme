@@ -1,0 +1,32 @@
+// Columns
+@include make-grid-columns();
+
+.container {
+    width: 100%;
+    max-width: $container-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: ($grid-gutter-width / -2);
+    margin-left: ($grid-gutter-width / -2);
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-padding {
+    &.col,
+    &[class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.justify-content-center {
+    justify-content: center;
+}

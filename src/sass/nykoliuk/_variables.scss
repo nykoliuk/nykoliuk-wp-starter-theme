@@ -1,0 +1,57 @@
+// Colors
+$brand1: #181818;
+$primary-color: #87A9F4;
+
+$gray3: #dbdbdb;
+$gray2: #ADADAD;
+$gray1: #F7F7F7;
+
+$error: #ff6b6b;
+$default-link: #87A9F4;
+$text-muted: $gray2;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  wide: 1024px
+);
+
+// Body
+$body-bg: #fff;
+$body-font: 'Roboto', sans-serif;
+$body-font-size: 16px;
+$fixed-menu-height: 56px;
+
+// Grid
+$grid-columns: 12;
+$grid-gutter-width: 32px;
+$container-width: 1504px;
+
+// Type
+$line-height: 1.5;
+$line-height-sm: 1.2;
+$headings-margin-bottom: 32px;
+$paragraph-margin-bottom: 1.56em;
+
+// Forms / Buttons
+$border-width: 1px;
+$border-color: $gray2;
+$border-radius: 8px;
+$btn-height: 40px;
+
+// Links
+$link-color: $brand1;
+$link-decoration: none;
+$link-hover-color: $primary-color;
+
+// Transitions
+$transition-base: all .2s ease-in-out;
+$transition-fade: opacity .15s linear;
+$link-transition: color .2s ease-in-out;
+$input-transition: border-color .15s ease-in-out;
+$btn-transition: background .2s ease-in-out;
+$link-transition: color .2s ease-in-out;

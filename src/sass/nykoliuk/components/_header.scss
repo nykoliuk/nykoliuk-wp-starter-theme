@@ -1,0 +1,17 @@
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+.site-header,
+.site-footer {
+    flex-shrink: 0;
+}
+.site-content {
+    flex: 1 0 auto;
+}
+
+.on-load {
+    display: none;
+}

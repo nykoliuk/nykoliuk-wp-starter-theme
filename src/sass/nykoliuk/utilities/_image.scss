@@ -1,0 +1,14 @@
+.image-placeholder {
+    background: $gray3;
+    position: relative;
+    width: 100%;
+    img {
+        object-fit: cover;
+        object-position: center bottom;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
